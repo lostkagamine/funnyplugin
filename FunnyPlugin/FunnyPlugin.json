@@ -1,0 +1,12 @@
+{
+  "Author": "rika lostkagamine",
+  "Name": "Funny Plugin",
+  "Punchline": "A very funny plugin.",
+  "Description": "It's funny.",
+  "InternalName": "funnyPlugin",
+  "ApplicableVersion": "any",
+  "Tags": [
+      "fuck",
+      "you"
+  ]
+}
