@@ -1,8 +1,11 @@
-﻿using Dalamud.Game.Command;
+﻿using System;
+using Dalamud.Game.Command;
 using Dalamud.IoC;
 using Dalamud.Plugin;
 using System.IO;
 using Dalamud.Interface.Windowing;
+using FFXIVClientStructs.FFXIV.Client.System.Framework;
+using FFXIVClientStructs.FFXIV.Client.UI;
 using FunnyPlugin.Windows;
 
 namespace FunnyPlugin
@@ -45,12 +48,12 @@ namespace FunnyPlugin
 
             this.CommandManager.AddHandler(CommandName, new CommandInfo(OnCommand)
             {
-                HelpMessage = "A useful message to display in /xlhelp"
+                HelpMessage = "No"
             });
 
             _chatHandler = new();
             _chatHandler.Begin();
-            
+
             this.PluginInterface.UiBuilder.Draw += DrawUI;
         }
 
